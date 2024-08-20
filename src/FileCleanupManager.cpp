@@ -131,7 +131,6 @@ void FileCleanupManager::deleteDirectoryContents(const std::filesystem::path& di
                 std::cout << "✅ Deleted: " << entry.path() << std::endl;
             } catch (const std::filesystem::filesystem_error& e) {
                 std::cerr << "⚠️ Unable to delete file: " << entry.path() << " - " << e.what() << std::endl;
-                // Silinemeyen dosyayı atlayarak devam et
             }
         }
     } catch (const std::exception& e) {
@@ -140,7 +139,7 @@ void FileCleanupManager::deleteDirectoryContents(const std::filesystem::path& di
 }
 
 std::string FileCleanupManager::getWindowsUsername() {
-    char username[UNLEN + 1]; // UNLEN, kullanıcının adının maksimum uzunluğunu belirtir
+    char username[UNLEN + 1];
     DWORD username_len = sizeof(username);
 
     if (GetUserNameA(username, &username_len)) {
