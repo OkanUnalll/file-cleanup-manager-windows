@@ -17,7 +17,7 @@ void FileCleanupManager::initTerminal() {
 
     std::cout << "🏠 Welcome to File Cleanup Manager, " + this->getWindowsUsername() << std::endl;
     std::cout << "⚠️ Please make sure you run the .exe file as administrator!!!" << std::endl;
-    std::cout << "⚙️ File Cleanup Manager for Windows v0.0.1-beta.1" << std::endl;
+    std::cout << "⚙️ File Cleanup Manager for Windows v0.0.1-beta.2" << std::endl;
     std::cout << "💻 Developed by Okan Unal" << std::endl;
     std::cout << "📁 This project is open source. Github repo: https://github.com/OkanUnalll/file-cleanup-manager-windows" << std::endl;
     std::cout << "---------------------" << std::endl;

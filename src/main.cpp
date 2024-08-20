@@ -123,6 +123,8 @@ int main() {
     } while (answer != 'Y' && answer != 'N');
 
     std::cout << "🎉 Cleanup completed!" << std::endl;
+    std::cout << "Press any key to exit..." << std::endl;
+    std::cin >> answer;
 
     return 0;
 }
