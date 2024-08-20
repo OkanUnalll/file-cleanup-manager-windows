@@ -6,4 +6,4 @@ Open the project in your [Visual Studio Code](https://code.visualstudio.com/) ed
 cd $dir && g++ *.cpp -o ..\\bin\\program && start cmd \"/k ; ..\\bin\\program
 ```
 
-The .exe file will be compiled into the /bin folder.
+The `.exe` file will be compiled into the `/bin` folder.
